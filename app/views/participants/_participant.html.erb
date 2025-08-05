@@ -1,0 +1,35 @@
+<div id="<%= dom_id participant %>">
+  <p>
+    <strong>Name:</strong>
+    <%= participant.name %>
+  </p>
+
+  <p>
+    <strong>Address:</strong>
+    <%= participant.address %>
+  </p>
+
+  <p>
+    <strong>Cpf:</strong>
+    <%= participant.cpf %>
+  </p>
+
+  <p>
+    <strong>Avatar:</strong>
+    <% if participant.avatar.persisted? %>
+      <%= image_tag participant.avatar %>
+    <% else %>
+      <span>Avatar não informado.</span>
+    <% end %>
+  </p>
+
+  <p>
+    <strong>Region:</strong>
+    <%= participant.region.name %>
+  </p>
+
+  <p>
+    <strong>Microregion:</strong>
+    <%= participant.microregion.name %>
+  </p>
+</div>
