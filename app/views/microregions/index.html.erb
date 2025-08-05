@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Microregions" %>
+
+<h1>Microregions</h1>
+
+<div id="microregions">
+  <% @microregions.each do |microregion| %>
+    <%= render microregion %>
+    <p>
+      <%= link_to "Show this microregion", microregion %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New microregion", new_microregion_path %>

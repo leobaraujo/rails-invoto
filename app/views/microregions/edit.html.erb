@@ -1,0 +1,12 @@
+<% content_for :title, "Editing microregion" %>
+
+<h1>Editing microregion</h1>
+
+<%= render "form", microregion: @microregion %>
+
+<br>
+
+<div>
+  <%= link_to "Show this microregion", @microregion %> |
+  <%= link_to "Back to microregions", microregions_path %>
+</div>

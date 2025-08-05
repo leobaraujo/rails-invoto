@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @microregion %>
+
+<div>
+  <%= link_to "Edit this microregion", edit_microregion_path(@microregion) %> |
+  <%= link_to "Back to microregions", microregions_path %>
+
+  <%= button_to "Destroy this microregion", @microregion, method: :delete %>
+</div>
